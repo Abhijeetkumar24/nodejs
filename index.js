@@ -11,7 +11,7 @@ app.get('/',(req,res)=>{
 app.post('/add', (req,res)=>{
     const {num1 , num2} =req.body;
     let add=num1+num2;
-    res.send(result);
+    res.send(add);
 })
 
 app.listen(3000 ,()=>{console.log("server start at 3000")});
